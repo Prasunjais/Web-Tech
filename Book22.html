@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>WEb Tech Book Store</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="style2.css" type="text/css">
+    <script type="text/JavaScript">
+ 
+    </script>
+    </head>
+<body>
+<div id="frame">
+  <div id="headcontainer">
+    <div id="leftcontainer">
+      <div id="logo"><a href="#"><img src="images/logo.jpg" alt="" width="267" height="40" /></a></div>
+    </div>
+    <div id="rightcontainer">
+      <div id="searchcontainer">
+        <div id="sleft"><img src="images/searchbgleft.jpg" alt="" /> </div>
+        <div id="smiddle">
+          <div id="search">Search:</div>
+          <div id="sbox">
+            <form id="form1" name="form1" method="post" action="#">
+              <input type="text" name="textfield"  style="width:100px; height:15px; border:1px solid #B2B2B1;" />
+            </form>
+          </div>
+          <div id="sbutton">
+            <label>
+            <input type="image" name="imageField" src="images/searchbutton.jpg" title="Go" />
+            </label>
+          </div>
+        </div>
+        <div id="sright"><img src="images/searchbgright.jpg" alt="" /></div>
+      </div>
+    </div>
+    <br class="spacer" />
+  </div>
+  <div id="navcontainer">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About Us</a></li>
+      <li><a href="Book.html"><span>Book Store</span></a></li>
+      <li><a href="orders.html">My Orders</a></li>
+      <li><a href="Ship.php">Account &amp; Shipping</a></li>
+      <li class="noPad"><a href="Contact.html">Contacts</a></li>
+    </ul>
+  </div>
+ <div class="w3-content w3-section" style="width:770px">
+  <img class="mySlides w3-animate-fading" src="images/bannerpic.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/bannerpic2.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/bannerpic3.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/bannerpic4.jpg" style="width:100%">
+</div>
+    <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+</script>
+    </div>
+    <div id="frame" style="width:1000px">
+<div id="main_content">
+    <div class="left_content">
+      <div class="title_box">Publishers</div>
+      <ul class="left_menu">
+        <li class="odd"><a href="#">Simon &amp; Schuster</a></li>
+        <li class="even"><a href="#">Harper Collins</a></li>
+        <li class="odd"><a href="#">Penguin Random House</a></li>
+        <li class="even"><a href="#">Hachette Livre.</a></li>
+        <li class="odd"><a href="#">Pearson</a></li>
+        <li class="even"><a href="#">ThomsonReuters</a></li>
+        <li class="odd"><a href="#">RELX Group</a></li>
+        <li class="even"><a href="#">Wolters Kluwer</a></li>
+        <li class="odd"><a href="#">McGraw-Hill Education</a></li>
+        <li class="odd"><a href="#">Wiley</a></li>
+        <li class="even"><a href="#">Egmont Group</a></li>
+      </ul>
+      <div class="title_box">Best Seller</div>
+      <div class="border_box">
+        <div class="product_title"><a href="details.html">Terry's Brooks</a></div>
+        <div class="product_img"><a href="details.html"><img src="images/Books/b11.gif" alt="" border="0" /></a></div>
+        <div class="prod_price"><span class="reduce">&#8377;219</span> <span class="price">&#8377;125</span></div>
+      </div>
+      <div class="title_box">Newsletter</div>
+      <div class="border_box">
+        <input type="text" name="newsletter" class="newsletter_input" value="your email"/>
+        <a href="#" class="join">join</a> </div>
+      <div class="banner_adds"> <a href="#"><img src="images/Books/bann1.jpg" alt="" border="0" /></a> </div>
+    </div>
+    <!-- end of left content -->
+    <div class="center_content">
+      <div class="center_title_bar">Recommended Books for you</div>
+      <div class="prod_box">
+        <div class="top_prod_box"></div>
+        <div class="center_prod_box">
+          <div class="product_title"><a href="details.html">Chetan Bhagat's 2 States</a></div>
+          <div class="product_img"><a href="details.html"><img src="images/Books/b1.gif" alt="" border="0" /></a></div>
+          <div class="prod_price"><span class="reduce">&#8377;350 </span> <span class="price">&#8377;110</span></div>
+        </div>
+        <div class="bottom_prod_box"></div>
+        <div class="prod_details_tab"> <a href="#" title="header=[Add to cart] body=[&nbsp;] fade=[on]"><img src="images/cart.gif" alt="" border="0" class="left_bt" /></a> <a href="#" title="header=[Specials] body=[&nbsp;] fade=[on]"><img src="images/favs.gif" alt="" border="0" class="left_bt" /></a> <a href="#" title="header=[Gifts] body=[&nbsp;] fade=[on]"><img src="images/favorites.gif" alt="" border="0" class="left_bt" /></a> <a href="details.html" class="prod_details">details</a> </div>
+      </div>
+      <div class="prod_box">
+        <div class="top_prod_box"></div>
+        <div class="center_prod_box">
+          <div class="product_title"><a href="details.html">One Indian Girl</a></div>
+          <div class="product_img"><a href="details.html"><img src="images/Books/b2.gif" alt="" border="0" /></a></div>
+          <div class="prod_price"><span class="price">&#8377;310</span></div>
+        </div>
+        <div class="bottom_prod_box"></div>
+        <div class="prod_details_tab"> <a href="#" title="header=[Add to cart] body=[&nbsp;] fade=[on]"><img src="images/cart.gif" alt="" border="0" class="left_bt" /></a> <a href="#" title="header=[Specials] body=[&nbsp;] fade=[on]"><img src="images/favs.gif" alt="" border="0" class="left_bt" /></a> <a href="#" title="header=[Gifts] body=[&nbsp;] fade=[on]"><img src="images/favorites.gif" alt="" border="0" class="left_bt" /></a> <a href="details.html" class="prod_details">details</a> </div>
+      </div>
+      <div class="prod_box">
+        <div class="top_prod_box"></div>
+        <div class="center_prod_box">
+          <div class="product_title"><a href="details.html">The Fault in our stars</a></div>
+          <div class="product_img"><a href="details.html"><img src="images/Books/b3.gif" alt="" border="0" /></a></div>
+          <div class="prod_price"><span class="reduce">&#8377;322</span> <span class="price">&#8377;200</span></div>
+        </div>
+        <div class="bottom_prod_box"></div>
+        <div class="prod_details_tab"> <a href="#" title="header=[Add to cart] body=[&nbsp;] fade=[on]"><img src="images/cart.gif" alt="" border="0" class="left_bt" /></a> <a href="#" title="header=[Specials] body=[&nbsp;] fade=[on]"><img src="images/favs.gif" alt="" border="0" class="left_bt" /></a> <a href="#" title="header=[Gifts] body=[&nbsp;] fade=[on]"><img src="images/favorites.gif" alt="" border="0" class="left_bt" /></a> <a href="details.html" class="prod_details">details</a> </div>
+      </div>
+      <div class="prod_box">
+        <div class="top_prod_box"></div>
+        <div class="center_prod_box">
+          <div class="product_title"><a href="details.html">The Monk Who sold his Ferrari</a></div>
+          <div class="product_img"><a href="details.html"><img src="images/Books/b4.gif" alt="" border="0" /></a></div>
+          <div class="prod_price"><span class="reduce">&#8377;550</span> <span class="price">&#8377;356</span></div>
+        </div>
+        <div class="bottom_prod_box"></div>
+        <div class="prod_details_tab"> <a href="#" title="header=[Add to cart] body=[&nbsp;] fade=[on]"><img src="images/cart.gif" alt="" border="0" class="left_bt" /></a> <a href="#" title="header=[Specials] body=[&nbsp;] fade=[on]"><img src="images/favs.gif" alt="" border="0" class="left_bt" /></a> <a href="#" title="header=[Gifts] body=[&nbsp;] fade=[on]"><img src="images/favorites.gif" alt="" border="0" class="left_bt" /></a> <a href="details.html" class="prod_details">details</a> </div>
+      </div>
+      <div class="prod_box">
+        <div class="top_prod_box"></div>
+        <div class="center_prod_box">
+          <div class="product_title"><a href="details.html">The Creative Freedom</a></div>
+          <div class="product_img"><a href="details.html"><img src="images/Books/b5.gif" alt="" border="0" /></a></div>
+          <div class="prod_price"><span class="price">&#8377;220</span></div>
+        </div>
+        <div class="bottom_prod_box"></div>
+        <div class="prod_details_tab"> <a href="#" title="header=[Add to cart] body=[&nbsp;] fade=[on]"><img src="images/cart.gif" alt="" border="0" class="left_bt" /></a> <a href="#" title="header=[Specials] body=[&nbsp;] fade=[on]"><img src="images/favs.gif" alt="" border="0" class="left_bt" /></a> <a href="#" title="header=[Gifts] body=[&nbsp;] fade=[on]"><img src="images/favorites.gif" alt="" border="0" class="left_bt" /></a> <a href="details.html" class="prod_details">details</a> </div>
+      </div>
+      <div class="prod_box">
+        <div class="top_prod_box"></div>
+        <div class="center_prod_box">
+          <div class="product_title"><a href="details.html">Broke</a></div>
+          <div class="product_img"><a href="details.html"><img src="images/Books/b6.gif" alt="" border="0" /></a></div>
+          <div class="prod_price"><span class="reduce">&#8377;350</span> <span class="price">&#8377;240</span></div>
+        </div>
+        <div class="bottom_prod_box"></div>
+        <div class="prod_details_tab"> <a href="#" title="header=[Add to cart] body=[&nbsp;] fade=[on]"><img src="images/cart.gif" alt="" border="0" class="left_bt" /></a> <a href="#" title="header=[Specials] body=[&nbsp;] fade=[on]"><img src="images/favs.gif" alt="" border="0" class="left_bt" /></a> <a href="#" title="header=[Gifts] body=[&nbsp;] fade=[on]"><img src="images/favorites.gif" alt="" border="0" class="left_bt" /></a> <a href="details.html" class="prod_details">details</a> </div>
+      </div>
+      <div class="center_title_bar">Best Books for you!</div>
+      <div class="prod_box">
+        <div class="top_prod_box"></div>
+        <div class="center_prod_box">
+          <div class="product_title"><a href="details.html">The Last Wild</a></div>
+          <div class="product_img"><a href="details.html"><img src="images/Books/b7.gif" alt="The Last Wild" border="0" /></a></div>
+          <div class="prod_price"><span class="reduce">&#8377;350</span> <span class="price">&#8377;280</span></div>
+        </div>
+        <div class="bottom_prod_box"></div>
+        <div class="prod_details_tab"> <a href="#" title="header=[Add to cart] body=[&nbsp;] fade=[on]"><img src="images/cart.gif" alt="" border="0" class="left_bt" /></a> <a href="#" title="header=[Specials] body=[&nbsp;] fade=[on]"><img src="images/favs.gif" alt="" border="0" class="left_bt" /></a> <a href="#" title="header=[Gifts] body=[&nbsp;] fade=[on]"><img src="images/favorites.gif" alt="" border="0" class="left_bt" /></a> <a href="details.html" class="prod_details">details</a> </div>
+      </div>
+      <div class="prod_box">
+        <div class="top_prod_box"></div>
+        <div class="center_prod_box">
+          <div class="product_title"><a href="details.html">Harry Potter</a></div>
+          <div class="product_img"><a href="details.html"><img src="images/Books/b8.gif" alt="" border="0" /></a></div>
+          <div class="prod_price"><span class="price">&#8377;270</span></div>
+        </div>
+        <div class="bottom_prod_box"></div>
+        <div class="prod_details_tab"> <a href="#" title="header=[Add to cart] body=[&nbsp;] fade=[on]"><img src="images/cart.gif" alt="" border="0" class="left_bt" /></a> <a href="#" title="header=[Specials] body=[&nbsp;] fade=[on]"><img src="images/favs.gif" alt="" border="0" class="left_bt" /></a> <a href="#" title="header=[Gifts] body=[&nbsp;] fade=[on]"><img src="images/favorites.gif" alt="" border="0" class="left_bt" /></a> <a href="details.html" class="prod_details">details</a> </div>
+      </div>
+      <div class="prod_box">
+        <div class="top_prod_box"></div>
+        <div class="center_prod_box">
+          <div class="product_title"><a href="details.html">The Bright River</a></div>
+          <div class="product_img"><a href="details.html"><img src="images/Books/b9.gif" alt="" border="0" /></a></div>
+          <div class="prod_price"><span class="reduce">&#8377;350</span> <span class="price">&#8377;270</span></div>
+        </div>
+        <div class="bottom_prod_box"></div>
+        <div class="prod_details_tab"> <a href="#" title="header=[Add to cart] body=[&nbsp;] fade=[on]"><img src="images/cart.gif" alt="" border="0" class="left_bt" /></a> <a href="#" title="header=[Specials] body=[&nbsp;] fade=[on]"><img src="images/favs.gif" alt="" border="0" class="left_bt" /></a> <a href="#" title="header=[Gifts] body=[&nbsp;] fade=[on]"><img src="images/favorites.gif" alt="" border="0" class="left_bt" /></a> <a href="details.html" class="prod_details">details</a> </div>
+      </div>
+        <div style="float:left;">
+        <img src="images/Books/Below.jpg" width=560px height=135px >
+        </div>
+    </div>
+    <!-- end of center content -->
+    <div class="right_content">
+      <div class="shopping_cart">
+        <div class="cart_title">Shopping cart</div>
+        <div class="cart_details"> Items in the cart :<span id="p1"></span> <br />
+            <script>    
+            document.getElementById("p1").innerHTML= 0;
+            </script>
+          <span class="border_cart"></span> Total: <span class="price">&#8377;0.0</span> </div>
+        <div class="cart_icon"><a href="#" title="header=[Checkout] body=[&nbsp;] fade=[on]"><img src="images/shoppingcart.png" alt="" width="48" height="48" border="0" /></a></div>
+      </div>
+      <div class="title_box">New Arrival</div>
+      <div class="border_box">
+        <div class="product_title"><a href="details.html">Twilight</a></div>
+        <div class="product_img"><a href="details.html"><img src="images/Books/b10.gif" alt="" border="0" /></a></div>
+        <div class="prod_price"><span class="reduce">&#8377;1100</span> <span class="price">&#8377;550</span></div>
+      </div>
+      <div class="title_box">Authors</div>
+      <ul class="left_menu">
+        <li class="odd"><a href="#">Chetan Bhagat</a></li>
+        <li class="even"><a href="#">Durjoy Dutta</a></li>
+        <li class="odd"><a href="#">Arundhati Roy</a></li>
+        <li class="even"><a href="#">Amitav Ghost</a></li>
+        <li class="odd"><a href="#">Jhumpa Lahiri</a></li>
+        <li class="even"><a href="#">Khushwant Singh</a></li>
+        <li class="odd"><a href="#">Vikram Seth</a></li>
+        <li class="even"><a href="#">Salman Rushdie</a></li>
+      </ul>
+      <div class="banner_adds"> <a href="#"><img src="images/Books/bann2.jpg" alt="" border="0" /></a> </div>
+    </div>
+    <!-- end of right content -->
+  </div>
+     <div id="about">
+         <div class="prod_box">
+        <div class="top_prod_box"></div>
+         <div class="center_prod_box">&copy;Prasun_jais All Rights Reserved</div>
+             </div>
+         </div>
+
+        </div>
+     
+  <!-- end of main content -->
+        </body>
+</html>

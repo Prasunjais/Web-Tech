@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>WEb Tech Book Store</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="style2.css" type="text/css">
+    <script type="text/JavaScript">
+ 
+    </script>
+    </head>
+<body>
+<div id="frame" style="width:750px;">
+  <div id="headcontainer">
+    <div id="leftcontainer">
+      <div id="logo"><a href="#"><img src="images/logo.jpg" alt="" width="267" height="40" /></a></div>
+    </div>
+    <div id="rightcontainer">
+      <div id="searchcontainer">
+        <div id="sleft"><img src="images/searchbgleft.jpg" alt="" /> </div>
+        <div id="smiddle">
+          <div id="search">Search:</div>
+          <div id="sbox">
+            <form id="form1" name="form1" method="post" action="#">
+              <input type="text" name="textfield"  style="width:100px; height:15px; border:1px solid #B2B2B1;" />
+            </form>
+          </div>
+          <div id="sbutton">
+            <label>
+            <input type="image" name="imageField" src="images/searchbutton.jpg" title="Go" />
+            </label>
+          </div>
+        </div>
+        <div id="sright"><img src="images/searchbgright.jpg" alt="" /></div>
+      </div>
+    </div>
+    <br class="spacer" />
+  </div>
+  <div id="navcontainer">
+    <ul>
+      <li><a href="index.php">Home</a></li>
+        <li><a href="About.html">About Us</a></li>
+      <li><a href="Book.php">Book Store</a></li>
+      <li><a href="orders.html">My Orders</a></li>
+      <li><a href="Ship.php">Account &amp; Shipping</a></li>
+      <li class="noPad"><a href="Contact.html"><span>Contacts</span></a></li>
+    </ul>
+  </div>
+ <div class="w3-content w3-section" style="width:770px">
+  <img class="mySlides w3-animate-fading" src="images/bannerpic.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/bannerpic2.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/bannerpic3.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/bannerpic4.jpg" style="width:100%">
+</div>
+    <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+        
+</script>
+    <marquee behavior="alternate" style="width:800px;border:RED 1px SOLID;background:#cccccc"><i><b>CONTACT US</b></i></marquee>
+      <div class="center_content" style="width:450px;padding:0px 0px;float:left;">
+      <div class="prod_box_big">
+        <div class="top_prod_box_big"></div>
+        <div class="center_prod_box_big">
+          <div class="contact_form">
+            <div class="form_row">
+                <label class="contact"><strong>Name:</strong></label>
+              <input type="text" id="naam" class="contact_input" />
+              <p id="np"></p>
+              </div>
+            <div class="form_row">
+              <label class="contact"><strong>Email:</strong></label>
+              <input type="text" class="contact_input" />
+            </div>
+            <div class="form_row">
+              <label class="contact"><strong>Phone:</strong></label>
+              <input type="text" class="contact_input" />
+            </div>
+            <div class="form_row">
+              <label class="contact"><strong>Company:</strong></label>
+              <input type="text" class="contact_input" />
+            </div>
+            <div class="form_row">
+              <label class="contact"><strong>Message:</strong></label>
+              <textarea class="contact_textarea" ></textarea>
+            </div>
+            <div class="form_row"><div style="float:right;"> <a href="mailto:prasunjais@gmail.com"><button name="Send" onclick="email()">send</button></a></div> </div>
+         <script>
+            function email()
+             {
+                 var name,Email,Phone,Company;
+                 var letter=/^[A-Z]+$/;
+                 name=document.getElementById("naam").value;
+                 if(name.match(letter)==false)
+                     {
+                         document.getElementById("np").innerHTML="Enter "
+                     }
+                 alert("Sending Mail");
+             }
+            </script>
+          </div>
+        </div>
+        <div class="bottom_prod_box_big"></div>
+      </div>
+    </div>
+   
+    <!-- end of center content -->
+    <div class="right_content" style="width:150px;padding:10px 0px;float:right;">
+    <img src="images/Books/Contact.gif">
+    </div>
+     <div style="float:left;padding:10px">
+        <img src="images/Books/Below.jpg" width=560px height=135px >
+        </div>
+    </div>
+    </body>
+</html>
